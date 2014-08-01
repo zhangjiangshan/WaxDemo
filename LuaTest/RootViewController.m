@@ -50,7 +50,7 @@
     [LuaHelper runLua:path];
     
     Class clazz = NSClassFromString(@"TTableViewHeader");
-    id header = [[clazz alloc] initWithFrame:CGRectMake(0, 0, 320.0, 200.0)];
+    id header = [[clazz alloc] initWithFrame:CGRectMake(0, 0, 320.0, 100.0)];
     self.tableView.tableHeaderView = header;
     [self.tableView reloadData];
 }
@@ -67,7 +67,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
         NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
         NSString * name = @"TTableViewHeader.lua";
-        //BOOL flag = [data writeToFile:[self getDocPath:name] atomically:YES];
+        BOOL flag = [data writeToFile:[self getDocPath:name] atomically:YES];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self refreshHeader];
         });
