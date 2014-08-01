@@ -26,7 +26,7 @@
     if (self) {
         [self loadLib];
 
-        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(reloadLua)];
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(loadLua)];
         [self.navigationItem setLeftBarButtonItem:item];
 
         Class clazz = NSClassFromString(@"ModelCenter");
@@ -38,15 +38,7 @@
         }];
         [modelCenter performSelector:@selector(getModelWithCalback:) withObject:block];
         
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://github.com/zhangjiangshan/WaxDemo/raw/master/LuaTest/TTableViewHeader.lua"]];
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
-            NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-            NSString * name = @"TTableViewHeader.lua";
-            BOOL flag = [data writeToFile:[self getDocPath:name] atomically:YES];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self refreshHeader];
-            });
-        });
+       
         
     }
     return self;
@@ -69,9 +61,17 @@
     return [doc stringByAppendingPathComponent:name];
 }
 
-- (void)reloadLua
+- (void)loadLua
 {
-    [self loadLib];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://github.com/zhangjiangshan/WaxDemo/raw/master/LuaTest/TTableViewHeader.lua"]];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
+        NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+        NSString * name = @"TTableViewHeader.lua";
+        //BOOL flag = [data writeToFile:[self getDocPath:name] atomically:YES];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self refreshHeader];
+        });
+    });
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -116,6 +116,12 @@
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+    label.backgroundColor = [UIColor redColor];
+    label.textColor = [UIColor whiteColor];
+    label.text = @"这是本地的";
+    self.tableView.tableHeaderView = label;
 }
 
 - (void)loadLib
