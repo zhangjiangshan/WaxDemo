@@ -29,8 +29,6 @@
         UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(reloadLua)];
         [self.navigationItem setLeftBarButtonItem:item];
 
-//        NSString * url = @"http://api.mobile.meituan.com/group/v1/poi/select/cate/-1?client=iphone&areaId=1471&ci=1&cityId=1&coupon=all&limit=20&mypos=40.007226%2C116.487860&offset=0&sort=distance&userid=60862012&utm_campaign=AgroupBgroupD100&utm_content=4F03EA0D5A951EBDEC573C01ACBD62B60328221889976AA20A46E30FED5EC1AE&utm_medium=iphone&utm_source=AppStore&utm_term=4.6.1&uuid=4F03EA0D5A951EBDEC573C01ACBD62B60328221889976AA20A46E30FED5EC1AE&movieBundleVersion=80";
-
         Class clazz = NSClassFromString(@"ModelCenter");
         id modelCenter = [[clazz alloc] init];
 
@@ -38,10 +36,36 @@
             _model = object;
             [self.tableView reloadData];
         }];
-
         [modelCenter performSelector:@selector(getModelWithCalback:) withObject:block];
+        
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://github.com/zhangjiangshan/WaxDemo/raw/master/LuaTest/TTableViewHeader.lua"]];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
+            NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+            NSString * name = @"TTableViewHeader.lua";
+            BOOL flag = [data writeToFile:[self getDocPath:name] atomically:YES];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self refreshHeader];
+            });
+        });
+        
     }
     return self;
+}
+
+- (void)refreshHeader
+{
+    NSString *path = [self getDocPath:@"TTableViewHeader.lua"];
+    [LuaHelper runLua:path];
+    
+    Class clazz = NSClassFromString(@"TTableViewHeader");
+    id header = [[clazz alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
+    self.tableView.tableHeaderView = header;
+}
+
+- (NSString *)getDocPath:(NSString *)name
+{
+    NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    return [doc stringByAppendingPathComponent:name];
 }
 
 - (void)reloadLua
@@ -96,11 +120,7 @@
 - (void)loadLib
 {
     [LuaHelper runLua:@"ModelCenter.lua"];
-
-    NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES)[0];
-    NSString *path = [docPath stringByAppendingPathComponent:@"TTableViewCell.lua"];
-    [LuaHelper runLua:path];
-    
+    [LuaHelper runLua:@"TTableViewCell.lua"];
 }
 
 
