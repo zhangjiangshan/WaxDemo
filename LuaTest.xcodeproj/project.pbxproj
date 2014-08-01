@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		700ECB8C196B9E0C00F00748 /* TTableViewCell.lua in Resources */ = {isa = PBXBuildFile; fileRef = 700ECB8B196B9E0C00F00748 /* TTableViewCell.lua */; };
+		7010A064196E619F00340144 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7010A063196E619E00340144 /* city.plist */; };
+		7010A066196E750200340144 /* ModelCenter.lua in Resources */ = {isa = PBXBuildFile; fileRef = 7010A065196E750200340144 /* ModelCenter.lua */; };
+		7010A069196E7B1800340144 /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7010A068196E7B1800340144 /* SubViewController.m */; };
+		70574839196654370029F47B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70574838196654370029F47B /* Foundation.framework */; };
+		7057483B196654370029F47B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7057483A196654370029F47B /* CoreGraphics.framework */; };
+		7057483D196654370029F47B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7057483C196654370029F47B /* UIKit.framework */; };
+		70574843196654370029F47B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70574841196654370029F47B /* InfoPlist.strings */; };
+		70574845196654370029F47B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70574844196654370029F47B /* main.m */; };
+		70574849196654370029F47B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70574848196654370029F47B /* AppDelegate.m */; };
+		7057484B196654370029F47B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7057484A196654370029F47B /* Images.xcassets */; };
+		70574852196654370029F47B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70574851196654370029F47B /* XCTest.framework */; };
+		70574853196654370029F47B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70574838196654370029F47B /* Foundation.framework */; };
+		70574854196654370029F47B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7057483C196654370029F47B /* UIKit.framework */; };
+		7057485C196654370029F47B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7057485A196654370029F47B /* InfoPlist.strings */; };
+		7057485E196654370029F47B /* LuaTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057485D196654370029F47B /* LuaTestTests.m */; };
+		708A87EC196658ED007F58A1 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708A87EB196658ED007F58A1 /* RootViewController.m */; };
+		708A88EE19665B38007F58A1 /* TTableViewController.lua in Resources */ = {isa = PBXBuildFile; fileRef = 708A88ED19665B38007F58A1 /* TTableViewController.lua */; };
+		708A88F019665C1D007F58A1 /* pushTTVC.lua in Resources */ = {isa = PBXBuildFile; fileRef = 708A88EF19665C1D007F58A1 /* pushTTVC.lua */; };
+		708A88F319667795007F58A1 /* LuaHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 708A88F219667795007F58A1 /* LuaHelper.m */; };
+		708A8D2E1966A592007F58A1 /* libWax.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 708A8D2B1966A585007F58A1 /* libWax.a */; };
+		70BB783D197531D000FA5776 /* NSBlockInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BB783C197531D000FA5776 /* NSBlockInvocation.m */; };
+		70C416261966ADC100C2AD90 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C416251966ADC100C2AD90 /* libxml2.2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70574855196654370029F47B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7057482D196654370029F47B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70574834196654370029F47B;
+			remoteInfo = LuaTest;
+		};
+		708A8D2A1966A585007F58A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708A8D251966A585007F58A1 /* Wax.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 708A8A0719669B52007F58A1;
+			remoteInfo = Wax;
+		};
+		70C4160B1966ABBA00C2AD90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708A8D251966A585007F58A1 /* Wax.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 708A8A0619669B52007F58A1;
+			remoteInfo = Wax;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		700ECB8B196B9E0C00F00748 /* TTableViewCell.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TTableViewCell.lua; sourceTree = "<group>"; };
+		7010A063196E619E00340144 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
+		7010A065196E750200340144 /* ModelCenter.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ModelCenter.lua; sourceTree = "<group>"; };
+		7010A067196E7B1800340144 /* SubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		7010A068196E7B1800340144 /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+		70574835196654370029F47B /* LuaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70574838196654370029F47B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7057483A196654370029F47B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7057483C196654370029F47B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		70574840196654370029F47B /* LuaTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LuaTest-Info.plist"; sourceTree = "<group>"; };
+		70574842196654370029F47B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70574844196654370029F47B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70574846196654370029F47B /* LuaTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LuaTest-Prefix.pch"; sourceTree = "<group>"; };
+		70574847196654370029F47B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		70574848196654370029F47B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7057484A196654370029F47B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		70574850196654370029F47B /* LuaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70574851196654370029F47B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		70574859196654370029F47B /* LuaTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LuaTestTests-Info.plist"; sourceTree = "<group>"; };
+		7057485B196654370029F47B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7057485D196654370029F47B /* LuaTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuaTestTests.m; sourceTree = "<group>"; };
+		708A87EA196658ED007F58A1 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		708A87EB196658ED007F58A1 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		708A88ED19665B38007F58A1 /* TTableViewController.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TTableViewController.lua; sourceTree = "<group>"; };
+		708A88EF19665C1D007F58A1 /* pushTTVC.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pushTTVC.lua; sourceTree = "<group>"; };
+		708A88F119667795007F58A1 /* LuaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaHelper.h; sourceTree = "<group>"; };
+		708A88F219667795007F58A1 /* LuaHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaHelper.m; sourceTree = "<group>"; };
+		708A8D251966A585007F58A1 /* Wax.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Wax.xcodeproj; sourceTree = "<group>"; };
+		70BB783B197531D000FA5776 /* NSBlockInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBlockInvocation.h; sourceTree = "<group>"; };
+		70BB783C197531D000FA5776 /* NSBlockInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBlockInvocation.m; sourceTree = "<group>"; };
+		70C416251966ADC100C2AD90 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70574832196654370029F47B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C416261966ADC100C2AD90 /* libxml2.2.dylib in Frameworks */,
+				708A8D2E1966A592007F58A1 /* libWax.a in Frameworks */,
+				7057483B196654370029F47B /* CoreGraphics.framework in Frameworks */,
+				7057483D196654370029F47B /* UIKit.framework in Frameworks */,
+				70574839196654370029F47B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7057484D196654370029F47B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70574852196654370029F47B /* XCTest.framework in Frameworks */,
+				70574854196654370029F47B /* UIKit.framework in Frameworks */,
+				70574853196654370029F47B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7057482C196654370029F47B = {
+			isa = PBXGroup;
+			children = (
+				708A8C051966A0E0007F58A1 /* libwax */,
+				7057483E196654370029F47B /* LuaTest */,
+				70574857196654370029F47B /* LuaTestTests */,
+				70574837196654370029F47B /* Frameworks */,
+				70574836196654370029F47B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70574836196654370029F47B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70574835196654370029F47B /* LuaTest.app */,
+				70574850196654370029F47B /* LuaTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70574837196654370029F47B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70C416251966ADC100C2AD90 /* libxml2.2.dylib */,
+				70574838196654370029F47B /* Foundation.framework */,
+				7057483A196654370029F47B /* CoreGraphics.framework */,
+				7057483C196654370029F47B /* UIKit.framework */,
+				70574851196654370029F47B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7057483E196654370029F47B /* LuaTest */ = {
+			isa = PBXGroup;
+			children = (
+				7010A063196E619E00340144 /* city.plist */,
+				7010A065196E750200340144 /* ModelCenter.lua */,
+				700ECB8B196B9E0C00F00748 /* TTableViewCell.lua */,
+				708A88EF19665C1D007F58A1 /* pushTTVC.lua */,
+				708A88ED19665B38007F58A1 /* TTableViewController.lua */,
+				70574847196654370029F47B /* AppDelegate.h */,
+				70574848196654370029F47B /* AppDelegate.m */,
+				708A87EA196658ED007F58A1 /* RootViewController.h */,
+				708A87EB196658ED007F58A1 /* RootViewController.m */,
+				708A88F119667795007F58A1 /* LuaHelper.h */,
+				708A88F219667795007F58A1 /* LuaHelper.m */,
+				7010A067196E7B1800340144 /* SubViewController.h */,
+				7010A068196E7B1800340144 /* SubViewController.m */,
+				7057484A196654370029F47B /* Images.xcassets */,
+				7057483F196654370029F47B /* Supporting Files */,
+				70BB783B197531D000FA5776 /* NSBlockInvocation.h */,
+				70BB783C197531D000FA5776 /* NSBlockInvocation.m */,
+			);
+			path = LuaTest;
+			sourceTree = "<group>";
+		};
+		7057483F196654370029F47B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70574840196654370029F47B /* LuaTest-Info.plist */,
+				70574841196654370029F47B /* InfoPlist.strings */,
+				70574844196654370029F47B /* main.m */,
+				70574846196654370029F47B /* LuaTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70574857196654370029F47B /* LuaTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				7057485D196654370029F47B /* LuaTestTests.m */,
+				70574858196654370029F47B /* Supporting Files */,
+			);
+			path = LuaTestTests;
+			sourceTree = "<group>";
+		};
+		70574858196654370029F47B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70574859196654370029F47B /* LuaTestTests-Info.plist */,
+				7057485A196654370029F47B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		708A8C051966A0E0007F58A1 /* libwax */ = {
+			isa = PBXGroup;
+			children = (
+				708A8D251966A585007F58A1 /* Wax.xcodeproj */,
+			);
+			path = libwax;
+			sourceTree = "<group>";
+		};
+		708A8D261966A585007F58A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				708A8D2B1966A585007F58A1 /* libWax.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70574834196654370029F47B /* LuaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70574861196654370029F47B /* Build configuration list for PBXNativeTarget "LuaTest" */;
+			buildPhases = (
+				70574831196654370029F47B /* Sources */,
+				70574832196654370029F47B /* Frameworks */,
+				70574833196654370029F47B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70C4160C1966ABBA00C2AD90 /* PBXTargetDependency */,
+			);
+			name = LuaTest;
+			productName = LuaTest;
+			productReference = 70574835196654370029F47B /* LuaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7057484F196654370029F47B /* LuaTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70574864196654370029F47B /* Build configuration list for PBXNativeTarget "LuaTestTests" */;
+			buildPhases = (
+				7057484C196654370029F47B /* Sources */,
+				7057484D196654370029F47B /* Frameworks */,
+				7057484E196654370029F47B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70574856196654370029F47B /* PBXTargetDependency */,
+			);
+			name = LuaTestTests;
+			productName = LuaTestTests;
+			productReference = 70574850196654370029F47B /* LuaTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7057482D196654370029F47B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = zjs;
+				TargetAttributes = {
+					70574834196654370029F47B = {
+						DevelopmentTeam = T3ZLXP4K5B;
+					};
+					7057484F196654370029F47B = {
+						TestTargetID = 70574834196654370029F47B;
+					};
+				};
+			};
+			buildConfigurationList = 70574830196654370029F47B /* Build configuration list for PBXProject "LuaTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7057482C196654370029F47B;
+			productRefGroup = 70574836196654370029F47B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 708A8D261966A585007F58A1 /* Products */;
+					ProjectRef = 708A8D251966A585007F58A1 /* Wax.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				70574834196654370029F47B /* LuaTest */,
+				7057484F196654370029F47B /* LuaTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		708A8D2B1966A585007F58A1 /* libWax.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libWax.a;
+			remoteRef = 708A8D2A1966A585007F58A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70574833196654370029F47B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708A88EE19665B38007F58A1 /* TTableViewController.lua in Resources */,
+				7010A066196E750200340144 /* ModelCenter.lua in Resources */,
+				708A88F019665C1D007F58A1 /* pushTTVC.lua in Resources */,
+				7010A064196E619F00340144 /* city.plist in Resources */,
+				700ECB8C196B9E0C00F00748 /* TTableViewCell.lua in Resources */,
+				70574843196654370029F47B /* InfoPlist.strings in Resources */,
+				7057484B196654370029F47B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7057484E196654370029F47B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7057485C196654370029F47B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70574831196654370029F47B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7010A069196E7B1800340144 /* SubViewController.m in Sources */,
+				70574849196654370029F47B /* AppDelegate.m in Sources */,
+				70BB783D197531D000FA5776 /* NSBlockInvocation.m in Sources */,
+				708A88F319667795007F58A1 /* LuaHelper.m in Sources */,
+				70574845196654370029F47B /* main.m in Sources */,
+				708A87EC196658ED007F58A1 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7057484C196654370029F47B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7057485E196654370029F47B /* LuaTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70574856196654370029F47B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70574834196654370029F47B /* LuaTest */;
+			targetProxy = 70574855196654370029F47B /* PBXContainerItemProxy */;
+		};
+		70C4160C1966ABBA00C2AD90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Wax;
+			targetProxy = 70C4160B1966ABBA00C2AD90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70574841196654370029F47B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70574842196654370029F47B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7057485A196654370029F47B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7057485B196654370029F47B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7057485F196654370029F47B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		70574860196654370029F47B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70574862196654370029F47B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhang shan (XPY46GWFLF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhang shan (XPY46GWFLF)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LuaTest/LuaTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2",
+					"$(SRCROOT)/libwax/wax/lib/**",
+				);
+				INFOPLIST_FILE = "LuaTest/LuaTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		70574863196654370029F47B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhang shan (XPY46GWFLF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhang shan (XPY46GWFLF)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LuaTest/LuaTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2",
+					"$(SRCROOT)/libwax/wax/lib/**",
+				);
+				INFOPLIST_FILE = "LuaTest/LuaTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		70574865196654370029F47B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LuaTest.app/LuaTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LuaTest/LuaTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LuaTestTests/LuaTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		70574866196654370029F47B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LuaTest.app/LuaTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LuaTest/LuaTest-Prefix.pch";
+				INFOPLIST_FILE = "LuaTestTests/LuaTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70574830196654370029F47B /* Build configuration list for PBXProject "LuaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7057485F196654370029F47B /* Debug */,
+				70574860196654370029F47B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70574861196654370029F47B /* Build configuration list for PBXNativeTarget "LuaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70574862196654370029F47B /* Debug */,
+				70574863196654370029F47B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70574864196654370029F47B /* Build configuration list for PBXNativeTarget "LuaTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70574865196654370029F47B /* Debug */,
+				70574866196654370029F47B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7057482D196654370029F47B /* Project object */;
+}
