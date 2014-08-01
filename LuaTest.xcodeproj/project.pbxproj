@@ -28,6 +28,7 @@
 		708A88F019665C1D007F58A1 /* pushTTVC.lua in Resources */ = {isa = PBXBuildFile; fileRef = 708A88EF19665C1D007F58A1 /* pushTTVC.lua */; };
 		708A88F319667795007F58A1 /* LuaHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 708A88F219667795007F58A1 /* LuaHelper.m */; };
 		708A8D2E1966A592007F58A1 /* libWax.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 708A8D2B1966A585007F58A1 /* libWax.a */; };
+		70A0E100198B962400ACA02D /* TTableViewHeader.lua in Resources */ = {isa = PBXBuildFile; fileRef = 70A0E0FF198B962400ACA02D /* TTableViewHeader.lua */; };
 		70BB783D197531D000FA5776 /* NSBlockInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BB783C197531D000FA5776 /* NSBlockInvocation.m */; };
 		70C416261966ADC100C2AD90 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C416251966ADC100C2AD90 /* libxml2.2.dylib */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		708A88F119667795007F58A1 /* LuaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaHelper.h; sourceTree = "<group>"; };
 		708A88F219667795007F58A1 /* LuaHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaHelper.m; sourceTree = "<group>"; };
 		708A8D251966A585007F58A1 /* Wax.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Wax.xcodeproj; sourceTree = "<group>"; };
+		70A0E0FF198B962400ACA02D /* TTableViewHeader.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TTableViewHeader.lua; sourceTree = "<group>"; };
 		70BB783B197531D000FA5776 /* NSBlockInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBlockInvocation.h; sourceTree = "<group>"; };
 		70BB783C197531D000FA5776 /* NSBlockInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBlockInvocation.m; sourceTree = "<group>"; };
 		70C416251966ADC100C2AD90 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
@@ -151,6 +153,7 @@
 		7057483E196654370029F47B /* LuaTest */ = {
 			isa = PBXGroup;
 			children = (
+				70A0E0FF198B962400ACA02D /* TTableViewHeader.lua */,
 				7010A063196E619E00340144 /* city.plist */,
 				7010A065196E750200340144 /* ModelCenter.lua */,
 				700ECB8B196B9E0C00F00748 /* TTableViewCell.lua */,
@@ -316,6 +319,7 @@
 				7010A066196E750200340144 /* ModelCenter.lua in Resources */,
 				708A88F019665C1D007F58A1 /* pushTTVC.lua in Resources */,
 				7010A064196E619F00340144 /* city.plist in Resources */,
+				70A0E100198B962400ACA02D /* TTableViewHeader.lua in Resources */,
 				700ECB8C196B9E0C00F00748 /* TTableViewCell.lua in Resources */,
 				70574843196654370029F47B /* InfoPlist.strings in Resources */,
 				7057484B196654370029F47B /* Images.xcassets in Resources */,
