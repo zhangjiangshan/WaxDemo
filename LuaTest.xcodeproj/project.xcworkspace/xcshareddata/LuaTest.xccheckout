@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C93BD4D1-07FD-4534-B492-839BED132ECA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LuaTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C5BEC60C-7D39-449A-877B-0304AC99B0B4</key>
+		<string>https://github.com/zhangjiangshan/WaxDemo</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LuaTest.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C5BEC60C-7D39-449A-877B-0304AC99B0B4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zhangjiangshan/WaxDemo</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C5BEC60C-7D39-449A-877B-0304AC99B0B4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C5BEC60C-7D39-449A-877B-0304AC99B0B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WaxDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
