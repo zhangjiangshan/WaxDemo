@@ -26,7 +26,7 @@
     if (self) {
         [self loadLib];
 
-        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(loadLua)];
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"点击加载lua" style:UIBarButtonItemStylePlain target:self action:@selector(loadLua)];
         [self.navigationItem setLeftBarButtonItem:item];
 
         Class clazz = NSClassFromString(@"ModelCenter");

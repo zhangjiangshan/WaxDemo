@@ -10,29 +10,29 @@
 	<string>LuaTest</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C5BEC60C-7D39-449A-877B-0304AC99B0B4</key>
+		<key>0FAD4CE0B183260D13511C8D8C904560185D3A1E</key>
 		<string>https://github.com/zhangjiangshan/WaxDemo</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LuaTest.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C5BEC60C-7D39-449A-877B-0304AC99B0B4</key>
+		<key>0FAD4CE0B183260D13511C8D8C904560185D3A1E</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zhangjiangshan/WaxDemo</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C5BEC60C-7D39-449A-877B-0304AC99B0B4</string>
+	<string>0FAD4CE0B183260D13511C8D8C904560185D3A1E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C5BEC60C-7D39-449A-877B-0304AC99B0B4</string>
+			<string>0FAD4CE0B183260D13511C8D8C904560185D3A1E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>WaxDemo</string>
 		</dict>
